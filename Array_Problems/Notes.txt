@@ -1,0 +1,20 @@
+ALGORITHM 
+
+REMOVE DUPLICATES FROM THE ARRAY
+Brute force 
+
+Since we need to store only unique elements, we can use the set data structure. We can insert all the elements of the array in the set irrespective of their frequency as set only allows one occurence of each element.
+
+--> Declare a set and insert all the elements of the array into the set.
+--> The number of unique elements in array is equal to size of the set.
+--> Traverse the set and fill the first k indices with elements in set.
+
+So in the problem statement for finding second largest element I wanna talk about something noticable and I am damn sure I'll again confuse myself at that point in future so:-
+
+In the optimal arrpoach when the nums[i] points to i = 2 i.e. nums[2] = 1 then this value 1 does not satisfies both of the conditions neither if nor else if so I was confused at once what will happen so the answer I got is nothing happens at this time and the value of i is increased to one i.e. i = 3
+
+<<<<<<< HEAD
+In the question Left Rotate array by one place I did a blunder and shouldn't have done that i.e. I didn't shifted the elements left wards and directly printed that so it was giving me the rotated array as [1, 2, 3, 4, 5, 6, 1] rather than giving me the correct answer as [2, 3, 4, 5, 6, 7, 1] just because I didn't shifted the elements leftside so nums[6] = 7 got over written by 1(nums[0])
+=======
+In the question Left Rotate array by one place I did a blunder and shouldn't have done that i.e. I didn't shifted the elements left wards and directly printed that so it was giving me the rotated array as [1, 2, 3, 4, 5, 6, 1] rather than giving me the correct answer as [2, 3, 4, 5, 6, 7, 1] just because I didn't shifted the elements leftside so nums[6] = 7 got over written by 1(nums[0])
+>>>>>>> b187a90 (Don't know why Notes.txt is not pushing the notes content on GitHub so I've to do this manually)

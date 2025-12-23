@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # DS-Algos-
 Questions and Notes from the Striver's A2Z Sheet's problems 
 =======

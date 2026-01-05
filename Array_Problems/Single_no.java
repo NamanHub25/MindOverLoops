@@ -39,6 +39,7 @@ public class Single_no {
 
 // Optimized approach
 
+/* 
 import java.util.*;
 
 public class Single_no {
@@ -68,3 +69,5 @@ public class Single_no {
     }
     
 }
+    */
+

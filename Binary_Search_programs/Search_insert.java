@@ -2,15 +2,21 @@ package Binary_Search_programs;
 
 import java.util.*;
 
-public class Upper_bound {
-    public static int upperbound(int[] nums, int n, int target){
-        int start = 0, end = nums.length - 1; int ans = 0;
+public class Search_insert {
+    
+    public static int searchinsert(int[] nums, int n,int target){
+        int start = 0, end = nums.length - 1; 
+        int ans = 0;
 
         while(start <= end){
             int mid = (start + end)/2;
-            if(nums[mid] > target){
+
+            if(nums[mid] == target){
+                return mid;
+            }
+            else if(nums[mid] > target){
                 ans = mid;
-                end = mid - 1; 
+                end = mid - 1;
             }
             else{
                 start = mid + 1;
@@ -25,15 +31,15 @@ public class Upper_bound {
         int n = input.nextInt();
 
         int[] nums = new int[n];
-        System.out.println("Enter the elements of the array: ");
+        System.out.println("Enter the elements of the array:");
         for(int i = 0; i < nums.length; i++){
             nums[i] = input.nextInt();
         }
-        System.out.println("Enter the targeted value: ");
+        System.out.println("Enter the target to be found: ");
         int target = input.nextInt();
-        
-        int result = upperbound(nums, n, n);
-        System.out.println("Upper bound in the array: " + Arrays.toString(nums) + " is: " + result);
+
+        int result = searchinsert(nums, n, target);
+        System.out.println("Index at which target can be found in the array: " + Arrays.toString(nums) + " is: " + result);
         input.close();
     }
 }

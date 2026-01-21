@@ -18,7 +18,7 @@ class Koko_banana {
         for(int i = 1; i <= maxVal; i++){
             int hours = calculateTotalhours(nums, i);
 
-            if(hours < h){
+            if(hours <= h){
                 return i;
             }
         }

@@ -6,25 +6,24 @@ public class Countevenno {
         int cnt_no = 0;
 
         for (int i = 0; i < nums.length; i++) {
-            int num = nums[i];   
+            int num = nums[i];   // Make a copy so original array isn't changed
             int cnt = 0;
 
-            // if (num == 0) {
-            //     cnt = 1;      
-            // } else {
+            if (num == 0) {
+                cnt = 1;      
+            } else {
                 while (num > 0) {
                     cnt++;
                     num /= 10;
                 }
-                if (cnt % 2 == 0) {
+            }
+
+            if (cnt % 2 == 0) {
                 cnt_no++;
             }
-            }
-
-            return cnt_no;
         }
 
-        
+        return cnt_no;
     }
 
     public static void main(String[] args) {
